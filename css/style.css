@@ -9,6 +9,10 @@ body {
 
 .form-container, .result-container {
     background-color: rgba(255, 255, 255, 0.9);
+<<<<<<< HEAD
+=======
+    border-left: 10px;
+>>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
 }
 
 /* Container Awal */
