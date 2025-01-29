@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="container">
+        <section class="form-container">
+            <h1>Kalkulator BMI</h1>
+            <article>
+                Berat badan ideal adalah impian banyak orang, terutama untuk menjaga kesehatan tubuh. Salah satu cara yang dapat digunakan untuk mengevaluasi apakah berat badan seseorang termasuk dalam kategori sehat adalah dengan menghitung Body Mass Index (BMI). Kalkulator BMI ini akan membantu Anda untuk mengetahui apakah berat badan Anda tergolong normal, kurang, atau berlebih berdasarkan tinggi badan dan umur Anda.
+            </article>
+            <!-- form input-->
+            <form>
+                <!-- Pilihan Jenis Kelamin -->
+                <div class="gender-selection">
+                    <label for="male">Pria</label>
+                    <input type="radio">
+                    <label for="female">Wanita</label>
+                    <input type="radio">
+                </div>
+
+                <!-- Input Berat Badan -->
+                <div class="input-field">
+                    <label for="weight">Berat Badan (Kg)</label>
+                    <input type="text" min="1" max="200" placeholder="Berat Badan (kg)" required>
+                </div>
+
+                <!-- Input Umur -->
+                <div class="input-field">
+                    <label for="age">Usia</label>
+                    <input type="text" min="1" max="100" placeholder="Masukkan Usia Anda" required>
+                </div>
+
+                <!-- Input Tinggi Badan -->
+                <div class="input-field">
+                    <label for="height">Tinggi Badan (cm)</label>
+                    <input type="text" min="1" max="250" placeholder="Masukkan Tinggi Badan Anda" required>
+                </div>
+
+                <!-- Tombol Submit dan reset -->
+                 <div>
+                <button type="submit" class="btn-calculate">Hitung BMI</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+            </form>
+
+            <!-- Keunggulan & Ketentuan -->
+            <div class="bmi-info">
+                <h4>Keunggulan Kalkulator BMI</h4>
+                <ul>
+                    <li>Mudah digunakan untuk menghitung BMI dengan cepat.</li>
+                    <li>Memberikan hasil yang akurat sesuai dengan standar pengukuran BMI.</li>
+                    <li>Tersedia penjelasan yang lengkap tentang kategori BMI dan arti hasilnya.</li>
+                </ul>
+            <h4>Ketentuan Penggunaan</h4>
+            <ul>
+                <li>Input harus valid</li>
+                <li>Gunakan untuk referensi umum, bukan diagnosis medis</li>
+            </ul>
+        </div>
+        </section>
+
+        <!-- Hasil -->
+        <section class="result-container">
+            <h1>Hasil</h1>
+            <form>
+                <!-- Keterangan Hasil-->
+                <div class="explanation">
+                    <p id="categoryResult">Keterangan kelebihan berat badan atau tidak</p>
+                </div>
+
+                 <!-- Nilai Perhitungan -->
+                <div class="result-box">
+                     <span class="result-font">00</span>
+                </div>
+
+                <!-- Penjelasan hasil -->
+            <div class="explanation">
+                <p>Penjelasan Hasil Perhitungan</p>
+            </div>
+            
+            <!-- Tombol Download -->
+            <button id="downloadBmiResult" class="btn-download">Download Hasil BMI</button>
+            
+            </form>
+
+
+            <!-- Disclaimer -->
+            <p class="disclaimer">
+                <strong>Disclaimer:</strong> BMI hanya merupakan alat pengukuran umum dan tidak sepenuhnya menggambarkan kesehatan tubuh seseorang. BMI tidak memperhitungkan faktor seperti komposisi tubuh (lemak vs otot) atau distribusi lemak tubuh. Konsultasikan dengan tenaga medis untuk diagnosa yang lebih akurat.
+            </p>
+
+            <!-- Penyakit Akibat Kegemukan -->
+            <h4 class="penyakit-container">Penyakit yang Dapat Timbul Akibat Kegemukan</h4>
+            <ul>
+                <li class="penyakit"><a href="https://www.halodoc.com/kesehatan/diabetes?srsltid=AfmBOoq-4XZ_gDDIudVMGdAelMAMLdD66Cg-05nmNA-JExyhbi5FB8SA">Diabetes</a></li>
+                <li class="penyakit"><a href="https://www.halodoc.com/kesehatan/hipertensi?srsltid=AfmBOopNZuNiitPAMB6-rE9_rXBCD-wfGw9_1rSUNWQDkxFsWxIS7-q9">Hipertensi</a></li>
+                <li class="penyakit"><a href="https://www.halodoc.com/kesehatan/penyakit-jantung?srsltid=AfmBOopMx5B3y86V5aPNoxPOn4ZBqmYFOy9brvkOPsq9c1CjNTsWS_w_">Sakit Jantung</a></li>
+                <li class="penyakit"><a href="https://www.halodoc.com/kesehatan/osteoartritis?srsltid=AfmBOopQfkiwCIX41JIl14HZYGfsfCrQNLJwiICuMlmpgrpEAPWD_AU-">Osteoartritis</a></li>
+                <li class="penyakit"><a href="https://www.halodoc.com/kesehatan/kesehatan-mental?srsltid=AfmBOoogAJYZz9_WizziRkKM0wzXmBFrukI5DY65lG4OkrzGufoxAw21">Gangguan Mental (Kecemasan berlebih)</a></li>
+            </ul>
+        </section>
+    </div>
+<footer>
+    <div class="me">
+    --Made By Effendy--
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
