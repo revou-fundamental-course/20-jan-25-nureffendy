@@ -7,71 +7,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <div class="container">
-<<<<<<< HEAD
-=======
-        <!-- Form Input -->
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
+    <div class="container">
         <section class="form-container">
             <h1>Kalkulator BMI</h1>
             <article>
                 Berat badan ideal adalah impian banyak orang, terutama untuk menjaga kesehatan tubuh. Salah satu cara yang dapat digunakan untuk mengevaluasi apakah berat badan seseorang termasuk dalam kategori sehat adalah dengan menghitung Body Mass Index (BMI). Kalkulator BMI ini akan membantu Anda untuk mengetahui apakah berat badan Anda tergolong normal, kurang, atau berlebih berdasarkan tinggi badan dan umur Anda.
             </article>
-<<<<<<< HEAD
             <!-- form input-->
-=======
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
             <form>
                 <!-- Pilihan Jenis Kelamin -->
                 <div class="gender-selection">
                     <label for="male">Pria</label>
-<<<<<<< HEAD
-                    <input type="radio">
+                    <input type="radio" name="gander" value="male">
                     <label for="female">Wanita</label>
-                    <input type="radio">
-=======
-                    <input type="checkbox">
-                    <label for="female">Wanita</label>
-                    <input type="checkbox">
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
+                    <input type="radio" name="gander" value="female">
                 </div>
 
                 <!-- Input Berat Badan -->
                 <div class="input-field">
                     <label for="weight">Berat Badan (Kg)</label>
-<<<<<<< HEAD
-                    <input type="text" min="1" max="200" placeholder="Berat Badan (kg)" required>
-=======
-                    <input type="text" required>
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
-                </div>
-
-                <!-- Input Umur -->
-                <div class="input-field">
-                    <label for="age">Usia</label>
-<<<<<<< HEAD
-                    <input type="text" min="1" max="100" placeholder="Masukkan Usia Anda" required>
-=======
-                    <input type="text" required>
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
+                    <input type="number" id="weight" min="1" max="250" placeholder="Masukkan Berat Badan Anda" required>
                 </div>
 
                 <!-- Input Tinggi Badan -->
                 <div class="input-field">
                     <label for="height">Tinggi Badan (cm)</label>
-<<<<<<< HEAD
-                    <input type="text" min="1" max="250" placeholder="Masukkan Tinggi Badan Anda" required>
-=======
-                    <input type="text" required>
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
+                    <input type="number" id="height" min="1" max="250" placeholder="Masukkan Tinggi Badan Anda" required>
+                </div>
+
+                <!-- Input Umur -->
+                <div class="input-field">
+                    <label for="age">Usia</label>
+                    <input type="number" id="age" min="1" max="100" placeholder="Masukkan Usia Anda" required>
                 </div>
 
                 <!-- Tombol Submit dan reset -->
-                 <div>
-                <button type="submit" class="btn-calculate">Hitung BMI</button>
-                <button type="reset" class="btn-reset">Reset</button>
-            </div>
+                <div>
+                    <button type="submit" class="btn-calculate">Hitung BMI</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
             </form>
+
+            <!-- Pesan Error -->
+            <div id="errorMessage" class="error-message" style="display: none;">
+                Mohon masukkan berat dan tinggi badan yang valid.
+            </div>
 
             <!-- Keunggulan & Ketentuan -->
             <div class="bmi-info">
@@ -90,29 +70,27 @@
         </section>
 
         <!-- Hasil -->
-        <section class="result-container">
+        <section id="result-container" class="result-container">
             <h1>Hasil</h1>
             <form>
                 <!-- Keterangan Hasil-->
                 <div class="explanation">
-                    <p id="categoryResult">Keterangan kelebihan berat badan atau tidak</p>
+                    <p id="category-result"></p>
                 </div>
 
                  <!-- Nilai Perhitungan -->
                 <div class="result-box">
-                     <span class="result-font">00</span>
+                     <span id="result-box" class="result-font">00</span>
                 </div>
 
                 <!-- Penjelasan hasil -->
-            <div class="explanation">
-                <p>Penjelasan Hasil Perhitungan</p>
-            </div>
-            
-            <!-- Tombol Download -->
-            <button id="downloadBmiResult" class="btn-download">Download Hasil BMI</button>
-            
+                <div class="explanation">
+                    <p id="suggestion"></p>
+                </div>
+                
+                <!-- Tombol Download -->
+                <button id="download-bmi-result" class="btn-download">Download Hasil BMI</button>
             </form>
-
 
             <!-- Disclaimer -->
             <p class="disclaimer">
@@ -130,18 +108,11 @@
             </ul>
         </section>
     </div>
-<<<<<<< HEAD
-<footer>
-    <div class="me">
-    --Made By Effendy--
-    </div>
-</footer>
-<script src="js/script.js"></script>
-=======
-<footer><div class="me">
-    --Made By Effendy--
-</div></footer>
+    <footer>
+        <div class="me">
+        --Made By Effendy--
+        </div>
+    </footer>
     <script src="js/script.js"></script>
->>>>>>> bc6e6b2b1923a7dac1e8a8d7d3df44b364fccd33
 </body>
 </html>
